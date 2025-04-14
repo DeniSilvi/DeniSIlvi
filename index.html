@@ -1,74 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="mk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ДениСилви - Колонијална Продавница</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('https://www.360macedonia.com/sliki/крушево/споменик-1.jpg');
-            background-size: cover;
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-        }
-        h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        h2 {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        section {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            margin: 20px;
-            border-radius: 10px;
-        }
-        footer {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>ДениСилви - Понуди</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Добредојдовте во продавницата ДениСилви!</h1>
+    </header>
+    <main>
+        <section class="offers">
+            <h2>Нашите понуди</h2>
+            <div class="offer">
+                <img src="images/produkt1.jpg" alt="Производ 1">
+                <h3>Домашен ајвар</h3>
+                <p>Само 180 денари по тегла.</p>
+            </div>
+            <div class="offer">
+                <img src="images/produkt2.jpg" alt="Производ 2">
+                <h3>Крушевска ракија</h3>
+                <p>Природна, органска – 500 денари за 1 литар.</p>
+            </div>
+        </section>
 
-<header>
-    <h1>ДениСилви</h1>
-    <h2>Колонијална Продавница - Крушево</h2>
-</header>
-
-<section>
-    <h2>Месечна Понуда</h2>
-    <ul>
-        <li>Кашкавал Битолски - 10% попуст</li>
-        <li>Eurocrem XL - 2 за 1</li>
-        <li>Kafa Grand - 15% попуст</li>
-        <li>Сокови Нектар - 3 за 100 ден.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Контакт</h2>
-    <p>Адреса: Центар, Крушево</p>
-    <p>Телефон: 078/123-456</p>
-    <p>Facebook: @denisilvikrushevo</p>
-    <p>Работно време: Пон - Саб: 08:00 - 20:00</p>
-</section>
-
-<footer>
-    <p>&copy; 2025 ДениСилви. Сите права задржани.</p>
-</footer>
-
+        <section class="contact">
+            <h2>Контакт и Локација</h2>
+            <p>📍 Адреса: Ул. Илинденска бр.10, Крушево</p>
+            <p>📞 Телефон: 078/123-456</p>
+            <form>
+                <label for="name">Име:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Е-пошта:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Порака:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <button type="submit">Испрати</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 ДениСилви | Сите права задржани</p>
+    </footer>
 </body>
 </html>
